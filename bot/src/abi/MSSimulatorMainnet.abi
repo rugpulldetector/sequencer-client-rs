@@ -1,0 +1,117 @@
+[
+        {
+            "type": "function",
+            "name": "getLimitPrice",
+            "inputs": [
+                {
+                    "name": "launcher",
+                    "type": "address",
+                    "internalType": "contract MSLauncherMainnet"
+                },
+                {
+                    "name": "index",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                },
+                {
+                    "name": "sellBaseToken",
+                    "type": "bool",
+                    "internalType": "bool"
+                },
+                {
+                    "name": "start",
+                    "type": "int256",
+                    "internalType": "int256"
+                },
+                {
+                    "name": "step",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                },
+                {
+                    "name": "stepCount",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                },
+                {
+                    "name": "swapAmount",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                },
+                {
+                    "name": "minProfit",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "limtSqrtPriceX96",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                },
+                {
+                    "name": "chainlinkPrice",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                },
+                {
+                    "name": "deltaAmount",
+                    "type": "int256",
+                    "internalType": "int256"
+                },
+                {
+                    "name": "profit",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                }
+            ],
+            "stateMutability": "nonpayable"
+        },
+        {
+            "type": "function",
+            "name": "pancakeV3SwapCallback",
+            "inputs": [
+                {
+                    "name": "amount0",
+                    "type": "int256",
+                    "internalType": "int256"
+                },
+                {
+                    "name": "amount1",
+                    "type": "int256",
+                    "internalType": "int256"
+                },
+                {
+                    "name": "data",
+                    "type": "bytes",
+                    "internalType": "bytes"
+                }
+            ],
+            "outputs": [],
+            "stateMutability": "nonpayable"
+        },
+        {
+            "type": "function",
+            "name": "uniswapV3SwapCallback",
+            "inputs": [
+                {
+                    "name": "amount0",
+                    "type": "int256",
+                    "internalType": "int256"
+                },
+                {
+                    "name": "amount1",
+                    "type": "int256",
+                    "internalType": "int256"
+                },
+                {
+                    "name": "data",
+                    "type": "bytes",
+                    "internalType": "bytes"
+                }
+            ],
+            "outputs": [],
+            "stateMutability": "nonpayable"
+        }
+    ]

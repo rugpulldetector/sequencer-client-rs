@@ -1,0 +1,14 @@
+chain_id = 1
+from_addr="0xB9f1a14E1d14C5265447DE1d8A417BeA3BaA5A7e"
+to_addr="0x55E41884b8dE42Ae9dA660b80bdBb22C136d5bed"
+simulator_addr="0x62B081FF11c697e93B92010Cb26eDA1C7DCD1F97"
+rpc_url = "http://localhost:8545"
+ws_url = "ws://localhost:8546"
+mevshare_url="https://mev-share.flashbots.net"
+sequencer_url = "https://mainnet-sequencer.optimism.io"
+data="./b"
+test_mode=false
+gas_limit=7000000
+step_count=40
+regression_count=6
+simulate_interval=50

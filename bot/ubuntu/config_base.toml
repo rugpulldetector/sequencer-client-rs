@@ -1,0 +1,13 @@
+from_addr="0x16490C64bFA714B98436F93B1b763020fD801B0B"
+to_addr="0xD09E13Ef2578c0ba0c8Bb747B61D4cd1159248D7"
+simulator_addr="0x4dB31311aA5763d41499e7961E8bB4f4Cafe875b"
+rpc_url = "https://go.getblock.us/c6cd29400da44990abfc3ca591683b88"
+sequencer_url = "https://mainnet-sequencer.base.org"
+ws_url = "wss://mainnet.flashblocks.base.org/ws"
+data="./1"
+chain_id=8453
+gas_limit=7000000
+test_mode=false
+step_count=50
+regression_count=7
+simulate_interval=50

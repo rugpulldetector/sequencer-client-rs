@@ -1,0 +1,17 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+via_ir = true
+optimizer = true
+optimizer_runs = 200
+
+evm_version="cancun"
+
+remappings = [
+    '@openzeppelin/contracts=lib/openzeppelin-contracts/contracts',
+    '@openzeppelin/contracts-upgradeable=lib/openzeppelin-contracts-upgradeable/contracts',
+]
+
+rpc_endpoints = { mainnet = "https://gateway.tenderly.co/public/mainnet", optimism = "http://localhost:6546", fantom = "https://rpc.ankr.com/fantom", arbitrum = "http://localhost:8547", bsc = "https://rpc.ankr.com/bsc", moonriver = "https://moonriver.public.blastapi.io", gnosis = "https://rpc.ankr.com/gnosis", avalanche = "https://rpc.ankr.com/avalanche", polygon = "https://rpc.ankr.com/polygon", celo = "https://rpc.ankr.com/celo", base = "http://65.21.96.142:8545", linea = "https://rpc.linea.build", scroll = "https://1rpc.io/scroll", zkevm = "https://zkevm-rpc.com", mantle = "https://rpc.ankr.com/mantle", blast = "https://rpc.blast.io", sei = "https://evm-rpc.sei-apis.com", bob = "https://bob-mainnet.public.blastapi.io", zksync = "https://mainnet.era.zksync.io", mode="https://mode.drpc.org", aurora = "https://mainnet.aurora.dev", kaia = "https://public-en.node.kaia.io" }
+

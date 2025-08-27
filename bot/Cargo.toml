@@ -1,0 +1,52 @@
+[package]
+name = "ms_bot"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+lto = true
+opt-level = 3
+
+[dependencies]
+tungstenite = "0.21"
+tokio-tungstenite = { version = "0.21", features = ["native-tls"] }
+base64 = "0.22.1"
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+hex = "0.4"
+url = "2.4"
+# crossbeam-channel = "0.5"
+env_logger = "0.11.3"
+log = "0.4"
+tokio = { version = "1.29", features = ["macros", "rt-multi-thread"] }
+ethers = "2.0.8"
+ethers-providers = { version = "2.0.8", features = ["ws"] }
+ethers-flashbots = "0.15.0"
+thiserror = "1.0"   
+tokio-stream = "0.1.17"
+wasm-bindgen = "0.2.88"
+async-trait = "0.1.64"
+async-stream = "0.3"
+anyhow = "1.0.70"
+tracing = "0.1.37"
+
+rpassword =  "7.2.0"
+mev-share = "0.1.0"
+
+revm-trace = {version = "4.2.0", features = ["foundry-fork"]}
+
+alloy-primitives = { version = "1.0.0", default-features = false, features = ["map-foldhash"] }
+alloy-eips = { version = "1.0.3", default-features = false }
+alloy-rpc-types = { version = "1.0.3", default-features = false }
+alloy-rpc-types-engine = { version = "1.0.3", default-features = false }
+alloy-serde = { version = "1.0.3", default-features = false }
+
+toml = "0.8"
+brotli-decompressor = "5.0.0"
+rayon = "1.10"  # or latest version
+crossbeam = "0.8"
+grouping_by = "0.2.2"
+crypto-ws-client = "4.12.11"
+
+jsonrpsee = { version = "0.26", features = ["macros", "client"] }
+jsonrpsee-ws-server = { version = "0.15.1" }
